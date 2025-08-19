@@ -1,1 +1,362 @@
-creating a template for robocon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Robocon Team Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .tech-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .robot-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #6B46C1 0%, #3182CE 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="tech-font text-2xl font-bold text-blue-400">ROBOCON</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="nav-link relative text-white hover:text-blue-300 transition">Home</a>
+                    <a href="#about" class="nav-link relative text-white hover:text-blue-300 transition">About</a>
+                    <a href="#team" class="nav-link relative text-white hover:text-blue-300 transition">Team</a>
+                    <a href="#robots" class="nav-link relative text-white hover:text-blue-300 transition">Robots</a>
+                    <a href="#events" class="nav-link relative text-white hover:text-blue-300 transition">Events</a>
+                    <a href="#contact" class="nav-link relative text-white hover:text-blue-300 transition">Contact</a>
+                </div>
+            </div>
+            <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md transition">Join Team</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="tech-font text-4xl md:text-6xl font-bold mb-6">BUILD. CODE. COMPETE.</h1>
+                <p class="text-xl mb-8">Join our college's premier robotics competition team and push the boundaries of engineering innovation.</p>
+                <div class="flex space-x-4">
+                    <button class="bg-white text-blue-700 hover:bg-gray-100 px-6 py-3 rounded-md font-bold transition">Current Season</button>
+                    <button class="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-6 py-3 rounded-md font-bold transition">Learn More</button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/56106d8a-18d0-4f47-b7c3-3e98908bc2a1.png" alt="Humanoid robot in action during Robocon competition showing dynamic movement with blue metallic finish" class="rounded-lg shadow-2xl border-4 border-white" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="tech-font text-3xl md:text-4xl font-bold mb-4">ABOUT ROBOCON</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700">Our college Robocon team competes in the annual Asia-Pacific robotics competition, bringing together the brightest engineering minds to solve complex challenges through robotics.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition border-t-4 border-blue-500">
+                    <div class="text-blue-600 text-4xl mb-4">15+</div>
+                    <h3 class="tech-font text-xl font-bold mb-3">Years of Experience</h3>
+                    <p class="text-gray-600">Our team has been competing in Robocon for over 15 years with numerous accolades.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition border-t-4 border-green-500">
+                    <div class="text-green-600 text-4xl mb-4">40+</div>
+                    <h3 class="tech-font text-xl font-bold mb-3">Team Members</h3>
+                    <p class="text-gray-600">Multidisciplinary team comprising mechanical, electrical, and computer engineering students.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition border-t-4 border-purple-500">
+                    <div class="text-purple-600 text-4xl mb-4">10+</div>
+                    <h3 class="tech-font text-xl font-bold mb-3">Robotics Projects</h3>
+                    <p class="text-gray-600">From autonomous drones to humanoid bots, we've built them all.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="tech-font text-3xl md:text-4xl font-bold mb-4">MEET THE TEAM</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700">Our team consists of passionate students and faculty advisors working together to create cutting-edge robotics solutions.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4985e072-e738-48d0-9cf7-3483c1a3da43.png" alt="Team leader in lab coat working on robot circuit board with focused expression in engineering lab" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="tech-font font-bold text-xl">Alex Johnson</h3>
+                        <p class="text-blue-600 mb-2">Team Captain</p>
+                        <p class="text-gray-600">Mechanical Engineering Senior with 3 years of Robocon experience.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5088ee51-dfd4-4c71-862f-c0141ad85461.png" alt="Female engineer analyzing robot schematics on digital tablet with robot arm in background" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="tech-font font-bold text-xl">Priya Sharma</h3>
+                        <p class="text-blue-600 mb-2">Software Lead</p>
+                        <p class="text-gray-600">Computer Science major specializing in AI and robotics.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3c458703-fe52-4480-a22d-2e1942cbbcc0.png" alt="Electrical engineering student adjusting wiring on competition robot with safety goggles" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="tech-font font-bold text-xl">David Chen</h3>
+                        <p class="text-blue-600 mb-2">Hardware Lead</p>
+                        <p class="text-gray-600">Electrical Engineering expert with circuit design specialization.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0c3e57a1-93d8-4634-97b2-144db7ec965f.png" alt="Faculty advisor reviewing robot prototype with students in university robotics lab" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="tech-font font-bold text-xl">Dr. Rajesh Kumar</h3>
+                        <p class="text-blue-600 mb-2">Faculty Advisor</p>
+                        <p class="text-gray-600">Professor of Robotics with 20+ years of research experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robots Section -->
+    <section id="robots" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="tech-font text-3xl md:text-4xl font-bold mb-4">OUR ROBOTS</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700">Explore our custom-built competition robots designed to tackle complex challenges.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Robot 1 -->
+                <div class="robot-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="text-blue-600 text-4xl mr-4">01</div>
+                        <h3 class="tech-font text-2xl font-bold">Valkyrie Mk.IV</h3>
+                    </div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c1c5c2d8-d94d-4b60-bd7f-6f6b9b509c5c.png" alt="Humanoid competition robot in action performing precision task with articulated arms" class="w-full rounded-lg mb-6" />
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>2023 Competition - Semi-finalist</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Advanced computer vision system</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Custom 3D-printed actuators</span>
+                        </li>
+                    </ul>
+                    <button class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">See Technical Specs</button>
+                </div>
+                
+                <!-- Robot 2 -->
+                <div class="robot-card bg-gray-50 p-8 rounded-xl border border-gray-200 transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="text-purple-600 text-4xl mr-4">02</div>
+                        <h3 class="tech-font text-2xl font-bold">Aegis DroneX</h3>
+                    </div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7856b9e8-96ab-4ddb-b81b-57ead98f8bfd.png" alt="Autonomous drone with robotic arm attachment flying in competition arena with bright spotlights" class="w-full rounded-lg mb-6" />
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>2022 Innovation Award Winner</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Hybrid aerial-ground system</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>AI-powered obstacle avoidance</span>
+                        </li>
+                    </ul>
+                    <button class="px-6 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition">See Flight Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="tech-font text-3xl md:text-4xl font-bold mb-4">UPCOMING EVENTS</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700">Stay updated with our competition schedule and workshops.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden mb-6">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-blue-600 text-white p-6 flex flex-col justify-center">
+                            <div class="text-3xl font-bold mb-1">APR</div>
+                            <div class="text-5xl font-bold">15-18</div>
+                            <div class="text-lg mt-2">2024</div>
+                        </div>
+                        <div class="md:w-2/3 p-6">
+                            <h3 class="tech-font text-xl font-bold mb-2">Asia-Pacific Robocon Competition</h3>
+                            <p class="text-gray-600 mb-4">The premier robotics competition for engineering students across Asia.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Tokyo, Japan
+                            </div>
+                            <button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition text-sm">Team Schedule</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden mb-6">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 bg-purple-600 text-white p-6 flex flex-col justify-center">
+                            <div class="text-3xl font-bold mb-1">MAR</div>
+                            <div class="text-5xl font-bold">22</div>
+                            <div class="text-lg mt-2">2024</div>
+                        </div>
+                        <div class="md:w-2/3 p-6">
+                            <h3 class="tech-font text-xl font-bold mb-2">Robotics Workshop</h3>
+                            <p class="text-gray-600 mb-4">Hands-on session on autonomous navigation systems for new members.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                College Engineering Lab - Bldg. 5
+                            </div>
+                            <button class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition text-sm">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="tech-font text-3xl md:text-4xl font-bold mb-4">GET IN TOUCH</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700">Interested in joining or supporting our team? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="tech-font text-xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-600">robocon@college.edu</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <p class="text-gray-600">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Location</h4>
+                                <p class="text-gray-600">Engineering Building 3, Room 402<br>College Campus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="tech-font text-xl font-bold mb-6">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:gr
